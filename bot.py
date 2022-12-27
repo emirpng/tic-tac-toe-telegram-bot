@@ -14,7 +14,7 @@ if sys.version_info[:2] >= (3, 8):
 else:
     from collections import MutableMapping
 
-from telegram import InlineQueryResultArticle,  \
+from telegram import \
     InputTextMessageContent, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import Updater, InlineQueryHandler, CommandHandler, \
     CallbackQueryHandler, ChosenInlineResultHandler
