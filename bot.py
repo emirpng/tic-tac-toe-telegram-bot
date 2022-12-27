@@ -8,7 +8,10 @@ from uuid import uuid4
 import sys
 from os import environ
 
-from pymongo.mongo_client import MongoClient
+if sys.version_info[:2] >= (3, 8):
+    from collections.abc import MutableMapping
+else:
+    from collections import MutableMapping
 
 from telegram import InlineQueryResultArticle,  \
     InputTextMessageContent, InlineKeyboardMarkup, InlineKeyboardButton
