@@ -8,7 +8,7 @@ from uuid import uuid4
 import sys
 from os import environ
 import urllib.request
-from .inputfile import InputFile
+
 if sys.version_info[:2] >= (3, 8):
     from collections.abc import MutableMapping
 else:
